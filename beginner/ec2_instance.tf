@@ -6,7 +6,7 @@ resource "aws_instance" "web" {
   }
   key_name               = var.key_name
   user_data              = file("scripts/install_apache.sh")
-  vpc_security_group_ids = [aws_security_group.web-sg.id]
+  vpc_security_group_ids = [aws_security_group.web_sg.id]
 
   provisioner "file" {
     source      = "./website"

@@ -1,5 +1,5 @@
-resource "aws_security_group" "web-sg" {
-  name        = "web-sg"
+resource "aws_security_group" "web_sg" {
+  name        = "web_sg"
   description = "Allow SSH inbound traffic"
 
   ingress {
@@ -31,6 +31,6 @@ resource "aws_security_group" "web-sg" {
   }
 
   tags = {
-    Name = "web-sg"
+    Name = "web_sg"
   }
 }
